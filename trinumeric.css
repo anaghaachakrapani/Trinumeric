@@ -237,6 +237,8 @@ p{margin:0 0 1em}
   background:repeating-linear-gradient(45deg,#eef2fb 0 12px,#e7edf9 12px 24px)}
 .amedia .ph-fb .tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .acap{color:var(--steel);font-size:.9rem;margin:.7em 0 0;text-align:center}
+.agrid2x2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(18px,2.5vw,26px)}
+@media(max-width:640px){.agrid2x2{grid-template-columns:1fr}}
 .agrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .agrid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 @media(max-width:900px){.agrid3,.agrid2{grid-template-columns:1fr 1fr}}
