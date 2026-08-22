@@ -199,6 +199,10 @@ p{margin:0 0 1em}
 .marquee-track{display:flex;width:max-content;gap:14px;animation:marq 34s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-track.rev{animation:marqrev 38s linear infinite}
+@keyframes marqrev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.marquee .lg .wordmark{font-family:var(--disp);font-weight:600;font-size:1.02rem;color:var(--navy);
+  letter-spacing:-.01em;text-align:center;line-height:1.2;white-space:nowrap}
 .marquee .lg{height:96px;min-width:190px;display:grid;place-items:center;padding:0 26px;background:#fff;
   border:1px solid var(--line);border-radius:12px;filter:grayscale(1);opacity:.78;transition:.25s;flex:none}
 .marquee .lg:hover{filter:none;opacity:1;border-color:#cdd8ef;box-shadow:var(--shadow-sm)}
